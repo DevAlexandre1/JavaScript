@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sistema de multas e verificação de Nacionalidade</h1>
+    Velocidade do carro: <input style="margin-left: 20px;" type="number" name="txtvel" id="txtvel"> km/h <br>
+    Nacionalidade: <input style="margin-left: 60px;"type="text" name="txtnac" id="txtnac"> <br>
+    
+    <input style="margin-top: 10px; margin-left: 20px;" type="button" value="Verificar velocidade" onclick="calcular()">
+    <input type="button" value="Verificar nacionalidade" onclick="nacionalidade()">
+    
+
+    <div id="res">
+    
+    </div>
+
+    <div id="nac">
+    
+    </div>
+
+    <script>
+        function calcular(){
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade <strong> ${vel} km/h </strong></p>`
+            if(vel > 60){
+                res.innerHTML = `Sua velocidade é de <strong>${vel} km/h</strong> e voce foi <strong>multado!</strong>`
+            }else{
+                res.innerHTML = `Sua velocidade foi de <strong>${vel} km/h </strong> , dirija com cuidado e boa viagem` 
+            }
+
+        }
+        function nacionalidade(){
+            var txtnacio = window.document.querySelector('input#txtnac')
+            var res2 = window.document.querySelector('div#nac')
+            var nacio = txtnacio.value
+            //res2.innerHTML= `Sua nacionalidade é ${nacio}`
+            if(nacio === 'Brasileiro' || nacio === 'brasileiro'){
+                res2.innerHTML = `Voce é <strong>${nacio}</strong>!`
+            }else{                
+                res2.innerHTML = `Voce é estrangeiro, nacionalidade <strong>${nacio}</strong>`
+            }
+        }
+    
+    </script>
+</body>
+</html>

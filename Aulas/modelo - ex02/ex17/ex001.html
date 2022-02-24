@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada  </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+
+   <header>
+        <p>Tabuada</p>
+   </header>
+
+   <section>
+    <div>
+    <p># Número Multiplicação: <input type="number" name="num" id="txtnum"></p>
+    <p># Número Divisão: <input style="margin-left : 40px;" type="number" name="num" id="txtnum1"></p>
+    <p># Número Adição: <input  style="margin-left: 44px;" type="number" name="num" id="txtnum2"></p>
+    <p># Número Subtração: <input  style="margin-left: 20px;" type="number" name="num" id="txtnum3"></p>
+
+    
+    <input style="width: 100px; height: 30px; color: blue; background-color: rgba(50, 182, 243, 0.473);"   type="button" value="Calcular" onclick="verificar()">
+    <input style="width: 100px; height: 30px; color: rgb(255, 0, 0); background-color: rgba(252, 178, 193, 0.664);" type="button" value="Limpar" onclick="limpar()">
+
+
+
+    </div>
+    <div id="tab" >
+        <label  for="Multiplicação"><strong>Multiplicação:</strong> <br></label>
+        <select style="padding: 7px;" name="tabuada" id="seltab" size="10px"></select>
+
+    </div>
+    <div id="tab1" >
+        <label for="Divisão"><strong>Divisão: </strong><br></label>
+        <select style="padding: 7px;" name="tabuada" id="seltab1" size="10px"></select>
+
+    </div>
+    <div id="tab2" >
+        <label for="Adição"><strong>Adição: </strong><br></label>
+        <select style="padding: 7px;" name="tabuada" id="seltab2" size="10px"></select>
+
+    </div>
+    <div id="tab3" >
+        <label for="Subtração"><strong>Subtração:</strong> <br></label>
+        <select  style="padding: 7px;" name="tabuada" id="seltab3" size="10px"></select>
+
+    </div>
+    
+   
+   </section>
+
+    <footer>
+        <p>&copy; Curso em vídeos </p>
+    </footer>
+
+
+<script src="data.js"></script>
+   
+</body>
+</html>

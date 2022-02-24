@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores do usuario</title>
+  <style>
+      body{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14pt;
+        }
+        input{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100px;
+            background-color: cornsilk;
+        }
+        div#res{
+            margin-top: 20px;
+
+        }
+        div#res2{
+            margin-top: 20px;
+
+        }
+        
+  </style>
+
+</head>
+<body>
+
+    <h1>Somando valores</h1>
+    <input type="number" name="txt1" id="txt1"> +
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <input type="number" name="txt3" id="txt3"> - 
+    <input type="number" name="txt4" id="txt4">
+    <input type="button" value="Subt" onclick="subt()">
+    <div id="res2">Resultado</div>
+
+
+
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txt1')
+            var tn2 = window.document.querySelector('input#txt2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            var sub = n1 - n2
+            res.innerHTML = `RESULTADO: A soma entre ${n1} e ${n2} é igual a ${s}`
+            
+            
+        }
+        function subt(){
+            var tn1 = window.document.getElementById('txt3')
+            var tn2 = window.document.querySelector('input#txt4')
+            var res = window.document.getElementById('res2')
+            var n3 = Number(tn1.value)
+            var n4 = Number(tn2.value)
+            var sub = n3 - n4
+            res.innerHTML = `RESULTADO: A subtracao entre ${n3} e ${n4} é igual a ${sub}`
+            
+        }
+     
+
+    </script>
+    
+</body>
+</html>

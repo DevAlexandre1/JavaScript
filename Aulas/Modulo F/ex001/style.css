@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+
+*{
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: blue;
+}
+
+
+
+body{
+    /* color: blue; */
+
+}
+
+
+select#flist{
+    width: 150px;
+}

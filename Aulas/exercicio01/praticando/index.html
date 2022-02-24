@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cadastro">
+    <h1>Cadastro de usuário</h1>
+    <p>Nome:
+        <input type="text" name="nome" id="txtnome">
+    </p>
+    <p>Data de nascimento:
+        <input type="date" name="idade" id="txtidade">
+    
+    </p>
+    <p>Informe seu email:
+        <input style="margin-left: 10px;" type="email" name="email" id="txtemail">
+    </p>
+    <p>
+        Sexo:
+        <input type="radio" name="sexo" id="mas" checked>
+        <label for="Masculino">Masculino</label>
+        <input type="radio" name="sexo" id="fem">
+        <label for="Feminino">Feminino</label>
+    </p>
+    <p>Defina uma senha:
+        <input style="margin-left: 10px;margin-top: 10px;"type="password" name="senha" id="txtsenha"><br>
+        Repetir senha:
+        <input style="margin-left: 40px; margin-top: 17px;"type="password" name="senha" id="txtsenha1">
+    </p>
+    <input style="margin-top: 10px;" type="button" value="Cadastrar" onclick="cadastrar()">
+    
+    <div id="res">
+        testando
+
+    </div>
+    
+</div>
+
+
+<script src="java.js"></script>
+</body>
+
+</html>

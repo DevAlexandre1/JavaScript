@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+            body{
+                background-color: rgb(173, 211, 245);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+     </style>
+
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <h2>Aqui esta sua resposta</h2>
+    <h3>resultado</h3>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique em mim</div>
+    <div class="msg2"> Usando Classes</div>
+    <div class="msg3"> Usando Classes em JAVASCRIPT</div>
+    <div classe="img" ><img src="../imgs/tecnoticias.jpg" alt="Imagem de tecnologia"> </div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Este é o resultado: ' + p1.innerText)//retorna o texto sem tags, o innerHTML retorna o texto com as tags.
+        //var d = window.document.getElementById('msg')[0]
+        //d.innerText = 'Olá mundo!'
+        //window.document.getElementsByClassName('msg3')
+
+        var d = window.document.querySelector('div#msg')// utiliza ponto para classe e # para div
+        d.style.background = 'white'
+
+        var p = window.document.querySelector('div.msg3')
+        p.style.color = 'white'
+
+        /* var x = window.document.querySelector('div.img')
+        x.style.posi */
+        
+    </script>
+</body>
+</html>
